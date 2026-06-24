@@ -750,7 +750,7 @@
   }
 }
 
-@media (max-width:768px){
+@media (max-width:768px), (hover:none) and (pointer:coarse){
   .hero-flow{display:none!important}
 }
 
