@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>サポート｜B-tory</title>
-<meta name="description" content="B-tory のサポートページ。使い方の基本、データのバックアップと機種変更、カメラやファイルのトラブル、発注書の送信についてご案内します。">
+<title>Support | B-tory</title>
+<meta name="description" content="B-tory support page. Learn the basic workflow, backups, device changes, camera and file troubleshooting, and order document sending.">
 <link rel="canonical" href="https://b-tory.com/support.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="サポート｜B-tory">
-<meta property="og:description" content="B-tory の使い方、バックアップ、機種変更、発注書の送信、問い合わせ先をまとめたサポートページです。">
+<meta property="og:title" content="Support | B-tory">
+<meta property="og:description" content="Support for B-tory, including basic usage, backups, device changes, order document sending, and contact details.">
 <meta property="og:url" content="https://b-tory.com/support.html">
 <meta property="og:image" content="https://b-tory.com/assets/btory-ogp.png">
+<meta property="og:locale" content="en_US">
 <meta name="theme-color" content="#FF2D73">
 <meta name="robots" content="index,follow">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=20260624-brand-gradient">
@@ -27,6 +28,7 @@
       <a href="index.html#faq">FAQ</a>
       <a href="privacy.html">プライバシー</a>
       <a href="terms.html">利用規約</a>
+      <a href="#contact">お問い合わせ</a>
     </nav>
     <div class="nav-cta"><a class="btn btn-ghost btn-sm" href="index.html">← トップ</a></div>
   </div>
@@ -38,15 +40,35 @@
     <h1 class="display">B-tory サポート</h1>
     <p class="updated">ご利用でお困りのときは、こちらをご覧ください。</p>
 
-    <div class="callout">
-      <strong>お問い合わせ：</strong> <a href="mailto:salon@thegoodthings-inc.com">salon@thegoodthings-inc.com</a><br>
-      <span style="color:var(--muted);font-size:.92rem">通常2〜3営業日以内にご返信します。お使いの端末（iPhone／iPad）と、状況・操作手順を添えていただくとスムーズです。</span>
+    <div class="callout" id="contact">
+      <strong>お問い合わせ / Contact：</strong><br>
+      B-toryの使い方、不具合、Apple Store提出用サポート窓口については、以下までご連絡ください。<br>
+      <span lang="en">For B-tory support, troubleshooting, or Apple Store support contact, please use the contact details below.</span><br><br>
+      <a href="mailto:salon@thegoodthings-inc.com">salon@thegoodthings-inc.com</a><br>
+      <a href="tel:+81368244380">03-6824-4380</a><br>
+      <span lang="en">+81-3-6824-4380</span><br>
+      <span style="color:var(--muted);font-size:.92rem">通常2〜3営業日以内にご返信します。お使いの端末（iPhone／iPad／Mac／Windows）と、状況・操作手順を添えていただくとスムーズです。</span>
     </div>
 
+    <h2>会社情報 / Company</h2>
+    <dl class="operator-info">
+      <dt>会社名 / Company</dt>
+      <dd>The good things 株式会社<span class="en">The good things K.K.</span></dd>
+      <dt>代表責任者 / Representative</dt>
+      <dd>代表取締役社長　道下 大輔<span class="en">Daisuke Michishita, CEO / Representative Director</span></dd>
+      <dt>所在地 / Address</dt>
+      <dd>〒150-0001<br>東京都渋谷区神宮前六丁目23番4号 桑野ビル2階<span class="en">Kuwano Bldg. 2F,<br>6-23-4 Jingumae,<br>Shibuya-ku, Tokyo 150-0001,<br>Japan</span></dd>
+      <dt>連絡先 / Contact</dt>
+      <dd><a href="mailto:salon@thegoodthings-inc.com">salon@thegoodthings-inc.com</a><br><a href="tel:+81368244380">03-6824-4380</a><span class="en">+81-3-6824-4380</span></dd>
+    </dl>
+
+    <h2>対応予定アプリ</h2>
+    <p>B-toryは、iPhone・iPad・Mac・Windowsアプリとして展開予定です。まずはiOS/iPadOS版を中心に準備し、Mac/Windows向けのデスクトップアプリ版も順次対応予定です。各ストアURL・ダウンロードURLが確定するまでは、公式サイトで準備中として案内します。</p>
+
     <h2>使い方の基本</h2>
-    <p>B-toryは、美容サロンの在庫・発注・納品・書類管理を仕入先別に整理できるローカル保存型アプリです。基本の流れは次のとおりです。</p>
+    <p>B-toryは、美容サロンの在庫・発注・納品・書類管理を仕入先別に整理できるアプリです。初回リリースでは端末内保存を中心に開始予定です。基本の流れは次のとおりです。</p>
     <ul>
-      <li>商品を登録する（写真・バーコード）</li>
+      <li>商品を登録する（Excel/CSV取り込み、写真・バーコード）</li>
       <li>在庫をチェックする（棚卸し）</li>
       <li>要発注を確認し、仕入先ごとに発注書を作成する</li>
       <li>届いた商品を納品登録し、在庫に反映する</li>
@@ -54,14 +76,30 @@
       <li>レポートで材料費率や傾向を振り返る</li>
     </ul>
 
+    <h2 id="register-products">商品を登録する</h2>
+    <p>まずは、今使っているExcel/CSVの在庫表から商品データを取り込めます。商品名、カテゴリ、メーカー、仕入先、在庫数などをまとめて登録し、その後に写真やバーコードを追加していくとスムーズです。</p>
+    <p><strong>Excel/CSVから取り込み、写真・バーコードでも登録できます。</strong> 手入力で1件ずつ追加することもできます。</p>
+
+    <h3>Excel/CSVから登録する流れ</h3>
+    <ol>
+      <li><strong>今使っている在庫表を用意</strong><br>Excel、Numbers、CSVなど、現在使っている在庫表を用意します。</li>
+      <li><strong>CSVまたはExcel形式で保存</strong><br>Numbersの場合は、Excel形式またはCSV形式で書き出します。</li>
+      <li><strong>B-toryでファイルを選択</strong><br>商品登録画面から、CSV/Excelファイルを選びます。</li>
+      <li><strong>項目を確認</strong><br>商品名、カテゴリ、メーカー、仕入先、在庫数などの列を確認します。</li>
+      <li><strong>取り込み</strong><br>内容を確認して取り込みます。必要に応じて、後から写真やバーコードを追加できます。</li>
+    </ol>
+    <div class="callout">
+      最初からすべてを完璧に入力する必要はありません。まずは商品名と在庫数だけでも始められます。営業中は写真やバーコードを追加していくと、商品を見つけやすくなります。
+    </div>
+
     <h2>データのバックアップ方法</h2>
-    <p>B-toryのデータは端末内に保存され、<strong>クラウドへの自動同期は行いません</strong>。メニューから「バックアップ（JSON）」を選び、ファイルを書き出して安全な場所に保管してください。復元するときは、同じメニューからそのファイルを読み込みます。</p>
+    <p>初回リリースでは、B-toryのデータは端末内保存を中心に開始予定です。メニューから「バックアップ（JSON）」を選び、ファイルを書き出して安全な場所に保管してください。復元するときは、同じメニューからそのファイルを読み込みます。将来のStarter / Pro / Maxでは、アカウント機能・クラウドバックアップ・複数端末同期を提供する場合があります。その場合は、保存される情報や利用目的を明示します。</p>
 
     <h2>機種変更時の注意</h2>
-    <p>機種変更や端末の初期化を行うと、端末内のデータは失われます。<strong>必ず事前にJSONバックアップを書き出して</strong>から、新しい端末で読み込んで復元してください。</p>
+    <p>機種変更や端末の初期化を行うと、端末内のデータは失われることがあります。<strong>必ず事前にJSONバックアップを書き出して</strong>から、新しい端末で読み込んで復元してください。</p>
 
     <h2>カメラが使えない場合</h2>
-    <p>カメラ機能はHTTPSまたはlocalhost環境で動作します。利用できない場合は、バーコードの手入力でご利用いただけます。端末の設定で、カメラ・写真へのアクセスが許可されているかもご確認ください。</p>
+    <p>カメラ機能は、カメラを利用できる端末・環境で動作します。利用できない場合は、バーコードの手入力でご利用いただけます。端末の設定で、カメラ・写真へのアクセスが許可されているかもご確認ください。</p>
 
     <h2>ファイル保存ができない場合</h2>
     <p>ブラウザや端末の設定によっては、ファイルの書き出しがブロックされることがあります。保存先の許可設定や空き容量をご確認のうえ、再度お試しください。PDFはブラウザの印刷機能を利用します。</p>
@@ -72,14 +110,18 @@
     <h2>よくある質問</h2>
     <div class="faq" style="margin-top:8px">
       <details class="qa"><summary>無料で使えますか？</summary><div class="a">はい。初回リリースは無料版で、主要機能を無料でご利用いただけます。</div></details>
-      <details class="qa"><summary>データはどこに保存されますか？</summary><div class="a">お使いの端末内に保存されます。サーバーへの自動送信は行いません。</div></details>
+      <details class="qa"><summary>どの端末で使えますか？</summary><div class="a">iPhone・iPad・Mac・Windowsアプリとして展開予定です。まずはiOS/iPadOS版を中心に準備しています。</div></details>
+      <details class="qa"><summary>データはどこに保存されますか？</summary><div class="a">初回リリースでは、端末内保存を中心に開始予定です。将来、クラウドバックアップや複数端末同期を提供する場合は、保存される情報や利用目的を明示します。</div></details>
+      <details class="qa"><summary>ExcelやNumbersの在庫表から登録できますか？</summary><div class="a">はい。CSVまたはExcel形式のファイルから商品データを取り込めるようにする予定です。Numbersを使っている場合は、Excel形式またはCSV形式で書き出してから取り込めます。まずは商品名、カテゴリ、仕入先、在庫数などをまとめて登録し、後から写真やバーコードを追加できます。</div></details>
+      <details class="qa"><summary>最初に全部の商品情報を入力しないと使えませんか？</summary><div class="a">いいえ。まずは商品名と在庫数だけでも始められます。必要に応じて、カテゴリ、メーカー、仕入先、写真、バーコードを後から追加できます。</div></details>
+      <details class="qa"><summary>パソコンが苦手でも使えますか？</summary><div class="a">はい。最初はExcel/CSVからまとめて取り込み、その後はスマホで写真やバーコードを使って管理できます。サロンワークの流れに合わせて、少しずつ整理していける設計を目指しています。</div></details>
       <details class="qa"><summary>Proプランはありますか？</summary><div class="a">初回リリースは無料版です。Pro／Max機能は今後のアップデートで検討予定です。</div></details>
     </div>
 
     <h2>不具合・ご要望の報告</h2>
     <p>次の情報を添えてメールでお寄せください。</p>
     <ul>
-      <li>お使いの端末・OSバージョン（例：iPhone 15／iOS 18）</li>
+      <li>お使いの端末・OSバージョン（例：iPhone 15／iOS、iPad／iPadOS、Mac／macOS、Windows PC／Windows）</li>
       <li>発生した操作の手順</li>
       <li>表示されたメッセージやスクリーンショット</li>
     </ul>
@@ -91,8 +133,8 @@
 
 <footer class="site-footer">
   <div class="wrap"><div class="foot-bottom" style="border:none;margin:0;padding:0">
-    <span>© 2026 The Good Things Inc.</span>
-    <span><a href="support.html">サポート</a> ・ <a href="privacy.html">プライバシー</a> ・ <a href="terms.html">利用規約</a></span>
+    <span>© 2026 The good things K.K.</span>
+    <span><a href="support.html#contact">サポート</a> ・ <a href="privacy.html">プライバシー</a> ・ <a href="terms.html">利用規約</a></span>
   </div></div>
 </footer>
 </body>
