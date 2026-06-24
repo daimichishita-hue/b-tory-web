@@ -750,7 +750,12 @@
   }
 }
 
+@media (max-width:768px){
+  .hero-flow{display:none!important}
+}
+
 @media (prefers-reduced-motion: reduce){
+  .hero-flow{display:none!important}
   .hero-slide{
     transition:none;
     transform:none;

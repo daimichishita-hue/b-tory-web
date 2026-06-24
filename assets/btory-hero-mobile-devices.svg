@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">B-tory app shown on phone and tablet screens</title>
+  <desc id="desc">Premium gradient hero artwork with abstract tablet and phone mockups for B-tory salon inventory management.</desc>
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7438D7"/>
+      <stop offset=".22" stop-color="#D725C8"/>
+      <stop offset=".47" stop-color="#FF2D73"/>
+      <stop offset=".72" stop-color="#FF623B"/>
+      <stop offset="1" stop-color="#FFC154"/>
+    </linearGradient>
+    <radialGradient id="warm" cx=".48" cy=".58" r=".76">
+      <stop offset="0" stop-color="#FFDA74" stop-opacity=".9"/>
+      <stop offset=".34" stop-color="#FF8A3D" stop-opacity=".55"/>
+      <stop offset=".7" stop-color="#FF2D73" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#7438D7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#FFF1E3"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#161312" flood-opacity=".24"/>
+    </filter>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#161312" flood-opacity=".14"/>
+    </filter>
+    <pattern id="dots" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="3" fill="#fff" opacity=".18"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1200" rx="90" fill="url(#brand)"/>
+  <rect width="1600" height="1200" rx="90" fill="url(#warm)"/>
+  <rect width="1600" height="1200" rx="90" fill="url(#dots)" opacity=".72"/>
+  <circle cx="190" cy="132" r="210" fill="#fff" opacity=".09"/>
+  <circle cx="1385" cy="1040" r="260" fill="#fff" opacity=".1"/>
+  <path d="M1128 58c184 70 292 206 326 386 33 177-67 275-160 331-116 71-261 75-397 15-101-44-173-117-207-207-49-128-14-278 90-388 88-94 210-177 348-137Z" fill="#fff" opacity=".1"/>
+  <path d="M124 805c138-57 286-41 394 37 97 70 135 174 95 265-41 94-156 136-302 111-156-26-270-118-286-230-11-76 25-145 99-183Z" fill="#161312" opacity=".08"/>
+
+  <g transform="translate(116 104)" fill="none">
+    <image href="btory-mark.png" width="86" height="86" preserveAspectRatio="xMidYMid meet"/>
+    <text x="112" y="56" fill="#fff" font-family="Arial Black, Helvetica, sans-serif" font-size="52" font-weight="900" letter-spacing="0">B-tory</text>
+    <text x="116" y="91" fill="#fff" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="3" opacity=".86">SALON INVENTORY</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="118" y="256" width="840" height="640" rx="62" fill="#161312"/>
+    <rect x="132" y="270" width="812" height="612" rx="50" fill="url(#screen)"/>
+    <rect x="132" y="270" width="812" height="92" rx="50" fill="#FFF7EF"/>
+    <rect x="132" y="336" width="812" height="26" fill="#FFF7EF"/>
+    <circle cx="187" cy="317" r="12" fill="#FF2D73" stroke="#161312" stroke-width="4"/>
+    <circle cx="226" cy="317" r="12" fill="#FFC154" stroke="#161312" stroke-width="4"/>
+    <circle cx="265" cy="317" r="12" fill="#fff" stroke="#161312" stroke-width="4"/>
+    <text x="714" y="324" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="28" font-weight="900" letter-spacing="2">B-TORY</text>
+
+    <g transform="translate(190 412)">
+      <rect width="212" height="154" rx="30" fill="#fff" stroke="#161312" stroke-width="5"/>
+      <circle cx="56" cy="56" r="28" fill="url(#brand)"/>
+      <rect x="96" y="40" width="76" height="14" rx="7" fill="#161312" opacity=".88"/>
+      <rect x="96" y="70" width="56" height="14" rx="7" fill="#FF2D73"/>
+      <text x="32" y="122" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="22" font-weight="900">Inventory</text>
+    </g>
+
+    <g transform="translate(444 412)">
+      <rect width="212" height="154" rx="30" fill="#fff" stroke="#161312" stroke-width="5"/>
+      <path d="M52 43h88l22 26v60H52Z" fill="#FFF0E4" stroke="#161312" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M140 43v28h24" fill="none" stroke="#161312" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="78" y="80" width="60" height="10" rx="5" fill="#FF2D73"/>
+      <rect x="78" y="103" width="82" height="10" rx="5" fill="#FFC154"/>
+      <text x="34" y="122" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="22" font-weight="900">Orders</text>
+    </g>
+
+    <g transform="translate(698 412)">
+      <rect width="176" height="154" rx="30" fill="#fff" stroke="#161312" stroke-width="5"/>
+      <circle cx="54" cy="64" r="30" fill="#FF2D73"/>
+      <path d="M42 64l11 12 31-34" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="32" y="122" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="22" font-weight="900">Delivery</text>
+    </g>
+
+    <g transform="translate(190 608)">
+      <rect width="316" height="202" rx="34" fill="#fff" stroke="#161312" stroke-width="5"/>
+      <text x="28" y="48" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="25" font-weight="900">Low stock</text>
+      <rect x="28" y="74" width="260" height="38" rx="18" fill="#FFE0D6"/>
+      <rect x="28" y="126" width="260" height="38" rx="18" fill="#FFF6EA" stroke="#161312" stroke-width="3"/>
+      <text x="48" y="100" fill="#161312" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="800">OX 6%</text>
+      <text x="228" y="101" fill="#FF2D73" font-family="Arial Black, Helvetica, sans-serif" font-size="21" font-weight="900">2</text>
+      <text x="48" y="152" fill="#161312" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="800">Color 8N</text>
+      <text x="228" y="153" fill="#FF2D73" font-family="Arial Black, Helvetica, sans-serif" font-size="21" font-weight="900">1</text>
+    </g>
+
+    <g transform="translate(546 608)">
+      <rect width="328" height="202" rx="34" fill="#fff" stroke="#161312" stroke-width="5"/>
+      <text x="28" y="48" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="25" font-weight="900">Receipts</text>
+      <rect x="28" y="78" width="94" height="78" rx="18" fill="#FFF0E4" stroke="#161312" stroke-width="4"/>
+      <rect x="142" y="78" width="94" height="78" rx="18" fill="#FFF0E4" stroke="#161312" stroke-width="4"/>
+      <rect x="48" y="102" width="52" height="10" rx="5" fill="#FF2D73"/>
+      <rect x="162" y="102" width="52" height="10" rx="5" fill="#FFC154"/>
+      <rect x="48" y="126" width="42" height="10" rx="5" fill="#161312" opacity=".7"/>
+      <rect x="162" y="126" width="42" height="10" rx="5" fill="#161312" opacity=".7"/>
+      <rect x="28" y="168" width="272" height="16" rx="8" fill="#161312" opacity=".12"/>
+    </g>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="972" y="210" width="400" height="760" rx="82" fill="#161312"/>
+    <rect x="987" y="225" width="370" height="730" rx="68" fill="#FFF8EE"/>
+    <rect x="1114" y="247" width="116" height="28" rx="14" fill="#161312"/>
+    <rect x="1034" y="312" width="276" height="116" rx="34" fill="url(#brand)"/>
+    <text x="1064" y="362" fill="#fff" font-family="Arial Black, Helvetica, sans-serif" font-size="29" font-weight="900">Salon stock</text>
+    <text x="1064" y="397" fill="#fff" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="800" opacity=".9">Check in the chair</text>
+
+    <rect x="1034" y="466" width="276" height="156" rx="34" fill="#fff" stroke="#161312" stroke-width="5"/>
+    <rect x="1066" y="498" width="84" height="84" rx="22" fill="#FFF0E4" stroke="#FF2D73" stroke-width="5" stroke-dasharray="12 9"/>
+    <rect x="1180" y="506" width="92" height="13" rx="7" fill="#161312"/>
+    <rect x="1180" y="536" width="70" height="13" rx="7" fill="#FF2D73"/>
+    <rect x="1180" y="566" width="82" height="13" rx="7" fill="#FFC154"/>
+    <text x="1066" y="603" fill="#161312" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="800">Photo + barcode</text>
+
+    <rect x="1034" y="656" width="276" height="122" rx="32" fill="#fff" stroke="#161312" stroke-width="5"/>
+    <text x="1062" y="702" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="24" font-weight="900">Order list</text>
+    <rect x="1062" y="724" width="82" height="15" rx="8" fill="#FF2D73"/>
+    <rect x="1160" y="724" width="54" height="15" rx="8" fill="#FFC154"/>
+    <rect x="1230" y="724" width="44" height="15" rx="8" fill="#161312" opacity=".2"/>
+
+    <g transform="translate(1034 812)">
+      <rect width="276" height="82" rx="28" fill="#fff" stroke="#161312" stroke-width="5"/>
+      <path d="M36 43l18 18 42-48" fill="none" stroke="#FF2D73" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="112" y="52" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="24" font-weight="900">Received</text>
+    </g>
+    <circle cx="1090" cy="922" r="9" fill="#fff" stroke="#161312" stroke-width="4"/>
+    <circle cx="1135" cy="922" r="9" fill="#fff" stroke="#161312" stroke-width="4"/>
+    <rect x="1172" y="914" width="54" height="16" rx="8" fill="#FF2D73" stroke="#161312" stroke-width="4"/>
+    <circle cx="1263" cy="922" r="9" fill="#fff" stroke="#161312" stroke-width="4"/>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <rect x="1040" y="942" width="312" height="86" rx="28" fill="#fff" stroke="#161312" stroke-width="5"/>
+    <circle cx="1082" cy="985" r="18" fill="url(#brand)"/>
+    <text x="1120" y="979" fill="#161312" font-family="Arial Black, Helvetica, sans-serif" font-size="22" font-weight="900">Inventory</text>
+    <text x="1120" y="1008" fill="#FF2D73" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="900">Orders, delivery, receipts</text>
+  </g>
+</svg>
