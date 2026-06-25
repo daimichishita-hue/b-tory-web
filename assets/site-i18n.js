@@ -99,13 +99,18 @@
       slides:{
         flowLabel:"B-tory feature showcase",
         controls:"Slide controls",
-        dots:["Show brand slide","Show photo registration slide","Show barcode slide","Show reorder slide","Show supplier ordering slide","Show receiving slide","Show documents and reports slide"],
-        labels:["1 / 7 Brand","2 / 7 Photo registration","3 / 7 Barcode","4 / 7 Reorder","5 / 7 Supplier ordering","6 / 7 Receiving","7 / 7 Documents and reports"],
+        dots:["Show brand slide","Show Excel/CSV import slide","Show photo registration slide","Show barcode slide","Show reorder slide","Show supplier ordering slide","Show receiving slide","Show documents and reports slide"],
+        labels:["1 / 8 Brand","2 / 8 Excel / CSV","3 / 8 Photo registration","4 / 8 Barcode","5 / 8 Reorder","6 / 8 Supplier ordering","7 / 8 Receiving","8 / 8 Documents and reports"],
         brand:{
           kicker:["Salon inventory app","For salons"],
           title:"B-tory is inventory for beauty salons.",
           body:"A salon materials management app born from active hairstylists.",
           tags:["Inventory","Orders","Receiving","Documents"]
+        },
+        excel:{
+          kicker:["Excel / CSV import","Start from Excel"],
+          title:"Start from Excel, manage on your phone.",
+          body:"Import from your existing inventory list, then add photos and barcodes later."
         },
         photo:{
           kicker:["Photo inventory","Photo registration"],
@@ -278,9 +283,10 @@
       slides:{
         flowLabel:"B-toryの機能紹介",
         controls:"スライド操作",
-        dots:["ブランドを表示","写真登録を表示","バーコードを表示","要発注を表示","仕入先別発注を表示","納品を表示","書類とレポートを表示"],
-        labels:["1 / 7 ブランド","2 / 7 写真登録","3 / 7 バーコード","4 / 7 要発注","5 / 7 仕入先別発注","6 / 7 納品","7 / 7 書類とレポート"],
+        dots:["ブランドを表示","Excel取り込みを表示","写真登録を表示","バーコードを表示","要発注を表示","仕入先別発注を表示","納品を表示","書類とレポートを表示"],
+        labels:["1 / 8 ブランド","2 / 8 Excel/CSV","3 / 8 写真登録","4 / 8 バーコード","5 / 8 要発注","6 / 8 仕入先別発注","7 / 8 納品","8 / 8 書類とレポート"],
         brand:{kicker:["Salon inventory app","サロン在庫アプリ"],title:"美容サロンの在庫アプリは、B-tory。",body:"現役美容師の声から生まれた、サロン材料管理アプリ。",tags:["在庫","発注","納品","書類管理"]},
+        excel:{kicker:["Excel / CSV import","Excel取り込み"],title:"Excelから始めて、スマホで管理。",body:"既存の在庫表から取り込み、写真やバーコードを後から追加できます。"},
         photo:{kicker:["Photo inventory","写真登録"],title:"写真で見つけやすく、登録もかんたん。",body:"カラー剤、店販商品、備品まで。写真で商品を迷わず管理。",screenTitle:"商品登録",fields:["カラークリーム 8N","仕入先: Aディーラー"],stock:"在庫 4",card:["写真で管理","棚で迷わない"]},
         barcode:{kicker:["Barcode check","バーコード確認"],title:"バーコードで、すぐ商品確認。",body:"営業中でも、スキャンして在庫をその場でチェック。",status:"スキャン中",result:["グロスカラー 6P","現在庫 7本"]},
         reorder:{kicker:["Reorder alert","要発注"],title:"足りない商品が、ひと目で分かる。",body:"発注点を下回った商品を見逃しにくく。",head:["要発注","3件"],rows:[["OX 6%","残り 1"],["カラー 8N","残り 2"],["手袋 M","残り 1"]],badge:"発注点以下"},
@@ -383,9 +389,10 @@
       slides:{
         flowLabel:"B-tory 功能介绍",
         controls:"幻灯片操作",
-        dots:["显示品牌","显示照片登记","显示条码","显示需订货","显示供应商订货","显示入库","显示文件和报表"],
-        labels:["1 / 7 品牌","2 / 7 照片登记","3 / 7 条码","4 / 7 需订货","5 / 7 按供应商订货","6 / 7 入库","7 / 7 文件和报表"],
+        dots:["显示品牌","显示Excel导入","显示照片登记","显示条码","显示需订货","显示供应商订货","显示入库","显示文件和报表"],
+        labels:["1 / 8 品牌","2 / 8 Excel/CSV","3 / 8 照片登记","4 / 8 条码","5 / 8 需订货","6 / 8 按供应商订货","7 / 8 入库","8 / 8 文件和报表"],
         brand:{kicker:["Salon inventory app","沙龙库存应用"],title:"美容沙龙的库存应用，B-tory。",body:"源自现役发型师声音的沙龙材料管理应用。",tags:["库存","订货","入库","文件"]},
+        excel:{kicker:["Excel / CSV import","Excel导入"],title:"从 Excel 开始，用手机管理。",body:"从现有库存表导入，之后再添加照片和条码。"},
         photo:{kicker:["Photo inventory","照片登记"],title:"用照片更容易找到，登记也简单。",body:"染膏、店售商品、备品，都可以用照片清楚管理。",screenTitle:"商品登记",fields:["染膏 8N","供应商: A 经销商"],stock:"库存 4",card:["照片管理","不用在货架上找"]},
         barcode:{kicker:["Barcode check","条码确认"],title:"用条码快速确认商品。",body:"营业中也能扫描并当场确认库存。",status:"扫描中",result:["Gloss Color 6P","当前库存 7"]},
         reorder:{kicker:["Reorder alert","需订货"],title:"不足的商品一眼可见。",body:"更容易发现低于订货点的商品。",head:["需订货","3 件"],rows:[["OX 6%","剩 1"],["Color 8N","剩 2"],["手套 M","剩 1"]],badge:"低于订货点"},
@@ -452,9 +459,10 @@
       slides:{
         flowLabel:"Presentación de funciones de B-tory",
         controls:"Controles de diapositivas",
-        dots:["Mostrar marca","Mostrar registro con fotos","Mostrar código de barras","Mostrar reposición","Mostrar pedidos por proveedor","Mostrar recepción","Mostrar documentos y reportes"],
-        labels:["1 / 7 Marca","2 / 7 Registro con fotos","3 / 7 Código de barras","4 / 7 Reposición","5 / 7 Pedidos por proveedor","6 / 7 Recepción","7 / 7 Documentos y reportes"],
+        dots:["Mostrar marca","Mostrar importación Excel/CSV","Mostrar registro con fotos","Mostrar código de barras","Mostrar reposición","Mostrar pedidos por proveedor","Mostrar recepción","Mostrar documentos y reportes"],
+        labels:["1 / 8 Marca","2 / 8 Excel / CSV","3 / 8 Registro con fotos","4 / 8 Código de barras","5 / 8 Reposición","6 / 8 Pedidos por proveedor","7 / 8 Recepción","8 / 8 Documentos y reportes"],
         brand:{kicker:["Salon inventory app","Para salones"],title:"B-tory es inventario para salones de belleza.",body:"Una app de gestión de materiales creada a partir de estilistas en activo.",tags:["Inventario","Pedidos","Recepción","Documentos"]},
+        excel:{kicker:["Excel / CSV import","Desde Excel"],title:"Empieza desde Excel y gestiona desde el móvil.",body:"Importa desde tu lista de inventario existente y añade fotos y códigos después."},
         photo:{kicker:["Photo inventory","Fotos"],title:"Más fácil de encontrar con fotos, más fácil de registrar.",body:"Coloración, productos de venta y suministros. Gestiona visualmente sin dudas.",screenTitle:"Registro de producto",fields:["Color Cream 8N","Proveedor: Dealer A"],stock:"Stock 4",card:["Gestión con fotos","Sin buscar en estantes"]},
         barcode:{kicker:["Barcode check","Código"],title:"Comprueba productos rápido con código de barras.",body:"Escanea durante el servicio y revisa el stock al momento.",status:"Escaneando",result:["Gloss Color 6P","Stock actual 7"]},
         reorder:{kicker:["Reorder alert","Bajo stock"],title:"Ve lo que falta de un vistazo.",body:"Es más fácil no pasar por alto productos por debajo del punto de pedido.",head:["Reposición","3 items"],rows:[["OX 6%","Queda 1"],["Color 8N","Quedan 2"],["Guantes M","Queda 1"]],badge:"Bajo punto de pedido"},
@@ -653,6 +661,7 @@
     all("[data-hero-slide]").forEach(function(el,index){el.setAttribute("aria-label",copy.slides.labels[index]);});
     all("[data-hero-dot]").forEach(function(el,index){el.setAttribute("aria-label",copy.slides.dots[index]);});
     applySlide(one(".hero-slide--brand"),copy.slides.brand);
+    applySlide(one(".hero-slide--excel"),copy.slides.excel);
     applySlide(one(".hero-slide--photo"),copy.slides.photo);
     applySlide(one(".hero-slide--barcode"),copy.slides.barcode);
     applySlide(one(".hero-slide--reorder"),copy.slides.reorder);
