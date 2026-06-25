@@ -416,6 +416,7 @@ section{padding:64px 0}
 .price-card li{position:relative;padding-left:18px;color:#34302b;font-size:.86rem;line-height:1.45}
 .price-card li::before{content:"";position:absolute;left:0;top:.66em;width:7px;height:7px;border-radius:999px;background:var(--grad-soft)}
 .price-card .btn{margin-top:auto;justify-content:center;width:100%;text-align:center}
+.plan-foot{margin:12px 0 0;color:var(--muted);font-size:.8rem;line-height:1.55}
 .plan-note{margin-top:20px;color:#50483f;font-size:.86rem;line-height:1.7}
 .plan-note p{margin:6px 0 0}
 
