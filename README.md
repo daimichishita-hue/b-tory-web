@@ -198,3 +198,19 @@ The Hero "30日無料トライアルを見る" button scrolls to `#starter-trial
 All purchase/subscription/trial actions are NOT implemented yet — buttons stay
 `is-disabled` / `aria-disabled="true"`. Copy is i18n-driven (`pricing`, `trial`, `faq`)
 in `assets/site-i18n.js` for ja / en / zh / es.
+
+## Pricing limit rationale (updated)
+
+Small salons often manage a wide range of materials, including color products, treatment
+products, retail products, consumables, suppliers, delivery notes, and receipts.
+Free Starter should allow enough data to experience the B-tory workflow, so 50 products
+is more appropriate than 20. Starter at 300 products is positioned for one-person and
+small salons. Pro expands to 1000 products, cloud backup, multi-device sync, and staff sharing.
+
+- Free Starter: 50 products / 30 photos / 10 documents / 100MB / 5 suppliers
+- Starter: 300 products / 300 photos / 1GB / 30 suppliers
+- Pro: 1000 products / 1000 photos / 5GB / 100 suppliers / 5 staff
+- Max: large capacity / 50GB+ / 10+ staff / integrations
+
+All paid plans, cloud, sync, and staff sharing are described as planned / in preparation;
+buttons stay disabled (no billing implemented).
