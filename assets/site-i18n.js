@@ -55,7 +55,7 @@
 
   function heroTitle(firstLine,gradientPhrases){
     var phrases=Array.isArray(gradientPhrases)?gradientPhrases:[gradientPhrases];
-    return '<span class="hero-line">'+escapeHtml(firstLine)+'</span> <span class="hero-line text-grad">'+phrases.map(function(phrase){return '<span class="hero-phrase">'+escapeHtml(phrase)+'</span>';}).join("")+'</span>';
+    return '<span class="hero-line">'+escapeHtml(firstLine)+'</span> <span class="hero-line text-grad">'+phrases.map(function(phrase,index){return '<span class="hero-phrase '+(index===0?'hero-phrase--accent':'hero-phrase--plain')+'">'+escapeHtml(phrase)+'</span>';}).join("")+'</span>';
   }
 
   var COPY={
@@ -551,6 +551,38 @@
     faq:{title:"Preguntas frecuentes",questions:["¿B-tory es gratis?","¿Qué permite Free Starter?","¿Puedo probar Starter gratis?","¿Cuánto cuesta Starter?","¿Habrá Pro y Max?","¿Se cobra automáticamente después de la prueba?","¿Qué dispositivos soportará B-tory?","¿Puedo usarlo en computadora?","¿Se sincronizan datos entre iPhone y PC?","¿Necesito cuenta?","¿Puedo registrar desde hojas de inventario de Excel o Numbers?","¿Debo introducir todos los datos de productos al inicio?","¿Puedo usarlo aunque no se me dé bien la computadora?","¿Los pedidos se envían automáticamente?","¿Se conecta automáticamente con POS o reservas?"],answers:["El primer lanzamiento está previsto con Free Starter para probar gratis. También se preparan planes Starter / Pro / Max para operación completa.","Free Starter está previsto para probar en pequeño registro de productos, fotos/códigos, bajo stock, órdenes, recepción y recibos/albaranes/facturas. Habrá límites de cantidad y capacidad.","Starter prepara una prueba gratuita de 30 días para probar registro, fotos, órdenes, recepción y recibos en el trabajo real del salón.","Starter está previsto a ¥1,980/mes o ¥19,800/año para salones pequeños y de una persona. Precio y contenido pueden cambiar antes del lanzamiento oficial.","Pro está previsto a ¥4,980/mes y Max desde ¥9,800/mes. Backup en nube, sincronización, staff, integraciones y AI/OCR se consideran para futuras actualizaciones.","Cuando se ofrezca facturación formal, precio, período y renovación se mostrarán claramente antes de empezar. La prueba de 30 días de Starter está en preparación.","B-tory está previsto para iPhone, iPad, Mac y Windows. Primero se prepara iOS/iPadOS y después versiones de escritorio Mac/Windows.","Sí. Se preparan versiones de escritorio para Mac y Windows. La disponibilidad se anunciará en el sitio oficial.","El primer lanzamiento está previsto con almacenamiento local. También se consideran cuentas, backup en nube y sincronización multi-dispositivo. Si se ofrecen, se explicarán la información guardada y los fines de uso.","Free Starter está previsto para comenzar sin login. En Starter / Pro se consideran cuenta, Apple login, Google login, email y backup en nube.","Sí. Está previsto importar datos de productos desde archivos CSV o Excel. Si usas Numbers, exporta primero en formato Excel o CSV. Puedes registrar nombres de productos, categorías, proveedores y cantidades juntas, y añadir fotos y códigos después.","No. Puedes empezar solo con el nombre del producto y la cantidad en stock. Categorías, fabricante, proveedor, fotos y códigos pueden añadirse más tarde según sea necesario.","Sí. Primero importa desde Excel/CSV y después gestiona desde el móvil con fotos y códigos de barras. B-tory está pensado para organizar poco a poco según el flujo del salón.","No. B-tory crea órdenes y textos, pero el usuario revisa y envía.","El primer lanzamiento no incluye integraciones automáticas. Se consideran para planes futuros como Max."]},
     cta:{title:"Prueba la gestión del salón desde Free Starter.",body:"La prueba de Starter, planes de pago y funciones en nube están en preparación.",button:"Ver planes",support:"Soporte y contacto"},footer:{productLinks:["Funciones","Cómo funciona","Planes","FAQ"]}
   });
+  merge(BUSINESS_COPY.en,{
+    mobileHero:{title:"Inventory, ordering, and receiving in one flow",slides:[
+      {title:"B-tory is a salon inventory app.",tags:["Inventory","Orders","Receiving","Receipts"]},
+      {title:"Start from Excel, then manage on your phone.",tags:["Excel","CSV","Photos","Barcodes"]},
+      {title:"Group low-stock items by supplier.",tags:["Low stock","Order sheet","Waiting"]},
+      {title:"Receive deliveries and keep receipts.",tags:["Receiving","Receipts","Invoices","Reports"]}
+    ]}
+  });
+  merge(BUSINESS_COPY.ja,{
+    mobileHero:{title:"在庫・発注・納品を、ひとつの流れで",slides:[
+      {title:"美容サロンの在庫アプリは、B-tory。",tags:["在庫","発注","納品","領収書"]},
+      {title:"Excelから始めて、スマホで管理。",tags:["Excel","CSV","写真","バーコード"]},
+      {title:"足りない商品を、仕入先ごとに発注。",tags:["要発注","発注書","入荷待ち"]},
+      {title:"届いたら納品登録。領収書も保存。",tags:["納品","領収書","請求書","レポート"]}
+    ]}
+  });
+  merge(BUSINESS_COPY.zh,{
+    mobileHero:{title:"库存、订货、入库放进一个流程",slides:[
+      {title:"B-tory 是美容沙龙库存应用。",tags:["库存","订货","入库","收据"]},
+      {title:"从 Excel 开始，用手机管理。",tags:["Excel","CSV","照片","条码"]},
+      {title:"缺货商品按供应商整理订货。",tags:["需订货","订单","待入库"]},
+      {title:"到货后登记入库，收据也保存。",tags:["入库","收据","发票","报表"]}
+    ]}
+  });
+  merge(BUSINESS_COPY.es,{
+    mobileHero:{title:"Inventario, pedidos y recepción en un solo flujo",slides:[
+      {title:"B-tory es una app de inventario para salones.",tags:["Inventario","Pedidos","Recepción","Recibos"]},
+      {title:"Empieza desde Excel y gestiona desde el móvil.",tags:["Excel","CSV","Fotos","Códigos"]},
+      {title:"Agrupa faltantes por proveedor.",tags:["Bajo stock","Orden","Pendiente"]},
+      {title:"Registra recepciones y guarda recibos.",tags:["Recepción","Recibos","Facturas","Reportes"]}
+    ]}
+  });
   LANGS.forEach(function(lang){merge(COPY[lang],BUSINESS_COPY[lang]||{});});
 
   function applySlide(root,slide){
@@ -596,6 +628,18 @@
     item(".hero .hero-cta .btn-ghost",0,copy.hero.guide);
     item(".hero .hero-cta .btn-ghost",1,copy.hero.support||copy.hero.guide);
     text(".hero-note",copy.hero.note);
+    if(copy.mobileHero){
+      text(".hero-mobile-caption strong",copy.mobileHero.title);
+      all(".hero-mobile-slide").forEach(function(slide,index){
+        var data=copy.mobileHero.slides[index];
+        if(!data){return;}
+        text("h2",data.title,slide);
+        all("p span",slide).forEach(function(tag,tagIndex){
+          tag.textContent=(data.tags&&data.tags[tagIndex])||"";
+          tag.hidden=!tag.textContent;
+        });
+      });
+    }
 
     text("#download .section-head .eyebrow",copy.download.eyebrow);
     text("#download .section-head h2",copy.download.title);

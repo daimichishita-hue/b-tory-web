@@ -781,10 +781,19 @@
 }
 .hero-flow__shell{
   border:1px solid var(--flow-hairline-strong);
-  box-shadow:none;
+  border-radius:34px;
+  box-shadow:0 24px 58px rgba(22,19,18,.16)!important;
+  background:
+    radial-gradient(circle at 14% 0%,rgba(113,55,216,.82) 0%,rgba(113,55,216,.42) 18%,rgba(113,55,216,0) 38%),
+    radial-gradient(circle at 58% 36%,rgba(245,26,162,.82) 0%,rgba(245,26,162,.5) 34%,rgba(245,26,162,0) 62%),
+    radial-gradient(circle at 52% 104%,rgba(255,212,95,.86) 0%,rgba(255,152,45,.62) 25%,rgba(255,152,45,0) 54%),
+    linear-gradient(160deg,#7137D8 0%,#C92BD5 18%,#F51AA2 38%,#FF2D73 58%,#FF6F22 82%,#FFD45F 100%);
 }
 .hero-flow__topbar{
   border-bottom:1px solid var(--flow-hairline);
+  height:50px;
+  background:rgba(255,255,255,.82);
+  backdrop-filter:blur(10px);
 }
 .hero-flow__topbar span,
 .hero-slide .hero-slide__kicker,
@@ -832,4 +841,8 @@
 .hero-flow__shell::before{
   border-width:18px;
   border-color:rgba(22,19,18,.045);
+}
+@media (min-width:981px){
+  .hero-flow{max-width:520px}
+  .hero-slide{padding:30px}
 }
