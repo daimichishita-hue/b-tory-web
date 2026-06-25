@@ -55,7 +55,7 @@
 
   function heroTitle(firstLine,gradientPhrases){
     var phrases=Array.isArray(gradientPhrases)?gradientPhrases:[gradientPhrases];
-    return '<span class="hero-line">'+escapeHtml(firstLine)+'</span> <span class="hero-line text-grad">'+phrases.map(function(phrase,index){return '<span class="hero-phrase '+(index===0?'hero-phrase--accent':'hero-phrase--plain')+'">'+escapeHtml(phrase)+'</span>';}).join("")+'</span>';
+    return '<span class="hero-line">'+escapeHtml(firstLine)+'</span> <span class="hero-line text-grad">'+phrases.map(function(phrase){return '<span class="hero-phrase hero-phrase--accent">'+escapeHtml(phrase)+'</span>';}).join("")+'</span>';
   }
 
   var COPY={
