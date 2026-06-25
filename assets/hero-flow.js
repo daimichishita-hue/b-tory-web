@@ -31,7 +31,7 @@
     function start(){
       if(prefersReduced || slides.length < 2){return;}
       stop();
-      timer = window.setInterval(function(){show(active + 1);}, 4500);
+      timer = window.setInterval(function(){show(active + 1);}, 2000);
     }
 
     dots.forEach(function(dot, i){
